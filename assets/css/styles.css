@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap");
-figure, button {
+figure,
+button {
   margin: 0;
   padding: 0;
 }
 
-button, a {
+button,
+a {
   -webkit-transform: all 0.3s;
-  transform: all 0.3s;
+          transform: all 0.3s;
 }
 
 button {
@@ -18,7 +20,8 @@ html {
   scroll-behavior: smooth;
 }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -43,8 +46,8 @@ header .banner {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   width: 100%;
   height: 100%;
@@ -54,41 +57,43 @@ header .banner .banner-title {
   font-size: 3rem;
 }
 
-#carousel .arrow-prev, #carousel .arrow-next {
+#carousel .arrow-prev,
+#carousel .arrow-next {
   position: absolute;
   top: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #0a0a0a;
   background: white;
   width: 2.3rem;
   height: 2.3rem;
   border-radius: 5px;
   cursor: pointer;
-  z-index: 5;
+  z-index: 10;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-#carousel .arrow-prev:hover, #carousel .arrow-next:hover {
+#carousel .arrow-prev:hover,
+#carousel .arrow-next:hover {
   background: rgba(255, 255, 255, 0.7);
 }
 
 #carousel .arrow-prev {
-  left: -2.5rem;
+  left: 0;
 }
 
 #carousel .arrow-next {
-  right: -2.5rem;
+  right: 0;
 }
 
 .fixed-top {
@@ -106,9 +111,9 @@ header .banner .banner-title {
 .navbar-shrink {
   background: #fff;
   -webkit-animation: down 0.7s ease-in-out 1;
-  animation: down 0.7s ease-in-out 1;
+          animation: down 0.7s ease-in-out 1;
   -webkit-box-shadow: 0 1px 10px 0 #363636;
-  box-shadow: 0 1px 10px 0 #363636;
+          box-shadow: 0 1px 10px 0 #363636;
 }
 
 .navbar-brand img {
@@ -155,7 +160,7 @@ header .banner .banner-title {
 
 #menuButton:focus {
   -webkit-box-shadow: 0 0 0 2px #363636;
-  box-shadow: 0 0 0 2px #363636;
+          box-shadow: 0 0 0 2px #363636;
 }
 
 .navbar-toggler i {
@@ -165,22 +170,22 @@ header .banner .banner-title {
 @-webkit-keyframes down {
   0% {
     -webkit-transform: translateY(-5rem);
-    transform: translateY(-5rem);
+            transform: translateY(-5rem);
   }
   100% {
     -webkit-transform: translateY(0);
-    transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
 @keyframes down {
   0% {
     -webkit-transform: translateY(-5rem);
-    transform: translateY(-5rem);
+            transform: translateY(-5rem);
   }
   100% {
     -webkit-transform: translateY(0);
-    transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -224,11 +229,11 @@ header .banner .banner-title {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   border-bottom: 1px solid #c6c6c5;
 }
 
@@ -248,7 +253,8 @@ header .banner .banner-title {
   font-size: 0.8rem;
 }
 
-.pop-up#cartList .cart-item h2, .pop-up#cartList .cart-item i {
+.pop-up#cartList .cart-item h2,
+.pop-up#cartList .cart-item i {
   color: #c6c6c5;
 }
 
@@ -274,19 +280,19 @@ header .banner .banner-title {
 .pop-up.hide-right {
   opacity: 0;
   -webkit-transform: translateX(10000px);
-  transform: translateX(10000px);
+          transform: translateX(10000px);
 }
 
 .pop-up.hide-left {
   opacity: 0;
   -webkit-transform: translateX(-10000px);
-  transform: translateX(-10000px);
+          transform: translateX(-10000px);
 }
 
 .pop-up.slide {
   opacity: 1;
   -webkit-transform: translateX(0);
-  transform: translateX(0);
+          transform: translateX(0);
 }
 
 .pop-up .pop-up-box {
@@ -301,11 +307,11 @@ header .banner .banner-title {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 2rem;
 }
 
@@ -335,7 +341,7 @@ header .banner .banner-title {
 
 .button-primary:focus {
   -webkit-box-shadow: 0 0 0 2px #1c1c1b;
-  box-shadow: 0 0 0 2px #1c1c1b;
+          box-shadow: 0 0 0 2px #1c1c1b;
 }
 
 #springSummer {
@@ -355,7 +361,8 @@ header .banner .banner-title {
   font-weight: 300;
 }
 
-#springSummer h1, #springSummer h2 {
+#springSummer h1,
+#springSummer h2 {
   font-weight: 400;
 }
 
@@ -389,7 +396,7 @@ header .banner .banner-title {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 100%;
-  grid-template-columns: 100%;
+      grid-template-columns: 100%;
   grid-gap: 2rem;
 }
 
@@ -412,15 +419,17 @@ header .banner .banner-title {
   font-size: 0.9rem;
 }
 
-#offering .discount, #offering .free-ship {
+#offering .discount,
+#offering .free-ship {
   position: relative;
   width: 100%;
   height: 240px;
   border-radius: 1.25rem;
 }
 
-#offering .discount h1, #offering .free-ship h1 {
-  font-size: 2.5rem;
+#offering .discount h1,
+#offering .free-ship h1 {
+  font-size: 1.25rem;
   font-weight: 400;
 }
 
@@ -438,11 +447,11 @@ header .banner .banner-title {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 3rem;
 }
 
@@ -459,7 +468,7 @@ header .banner .banner-title {
   padding: 1.5rem 2rem;
   border: 1px solid;
   -webkit-transform: translate(1rem, -50%);
-  transform: translate(1rem, -50%);
+          transform: translate(1rem, -50%);
   z-index: 3;
 }
 
@@ -586,6 +595,12 @@ footer .social-media i {
 }
 
 @media (min-width: 768px) {
+  #carousel .arrow-prev {
+    left: -1.5rem;
+  }
+  #carousel .arrow-next {
+    right: -1.5rem;
+  }
   header .banner .hero-img {
     height: 20rem;
   }
@@ -594,10 +609,14 @@ footer .social-media i {
   }
   #springSummer .custom-grid {
     -ms-grid-columns: 50% 46%;
-    grid-template-columns: 50% 46%;
+        grid-template-columns: 50% 46%;
   }
   .card-title {
     font-size: 1rem;
+  }
+  #offering .discount,
+  #offering .free-shipping {
+    font-size: 2rem;
   }
   #offering .bags-offer img {
     width: 22rem;
@@ -616,6 +635,10 @@ footer .social-media i {
   header .banner .hero-img {
     height: 22rem;
   }
+  #offering .discount,
+  #offering .free-shipping {
+    font-size: 2.5rem;
+  }
   #offering .bags-offer img {
     width: 25rem;
   }
@@ -630,6 +653,12 @@ footer .social-media i {
 }
 
 @media (min-width: 1200px) {
+  #carousel .arrow-prev {
+    left: -2.5rem;
+  }
+  #carousel .arrow-next {
+    right: -2.5rem;
+  }
   header .banner .hero-img {
     height: 24rem;
   }
@@ -644,14 +673,14 @@ footer .social-media i {
   }
   #springSummer .custom-grid {
     -ms-grid-columns: 28% 70%;
-    grid-template-columns: 28% 70%;
+        grid-template-columns: 28% 70%;
   }
   #offering .bags-offer img {
     width: 28rem;
   }
   #offering .bags-offer .detail-offer {
     -webkit-transform: translate(4rem, -50%);
-    transform: translate(4rem, -50%);
+            transform: translate(4rem, -50%);
   }
   #offering .bags-offer .detail-offer span {
     font-size: 1.2rem;
@@ -662,5 +691,4 @@ footer .social-media i {
     margin-bottom: 2rem;
   }
 }
-
 /*# sourceMappingURL=styles.css.map */
