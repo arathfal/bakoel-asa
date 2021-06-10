@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.min.css" />
+    <title>Bakoel Asa</title>
+  </head>
+  <body>
+    <div id="menu" class="pop-up hide-left">
+      <div class="pop-up-box">
+        <div class="pop-up-header">
+          <h1 class="pop-up-title">About us</h1>
+          <button id="closeMenu">
+            <img src="assets/images/Icons/Close.svg" alt="Close" class="x" />
+          </button>
+        </div>
+        <div class="pop-up-body">
+          <p class="pop-up-text mb-4">
+            Kami sebagai platform multi dimensi yang bergerak di bidang
+            sociopreneur terus melakukan pengembangan dalam budaya inovasi di
+            Indonesia. bakoelasa menciptakan produk-produk baru yang inovatif
+            dan bisa diterima oleh masyarakat. Sesuai dengan visi dan misi kami,
+            kami menekankan untuk membuat produk yang ramah lingkungan dan sadar
+            sosial. Produk dari bakoelasa mengambil konsep applied art (seni
+            terapan). Produk-produk yang berkonsep ‘art in daily life’ ini ingin
+            menunjukkan bahwa seni terapan sudah waktunya untuk menunjukkan
+            potretnya di Indonesia.
+          </p>
+          <p class="pop-up-text mb-4">contact@bakoelasa.com</p>
+          <h5>(+00) 123 567990</h5>
+          <div class="social-media">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="cartList" class="pop-up hide-right">
+      <div class="pop-up-box">
+        <div class="pop-up-header">
+          <h1 class="pop-up-title">Cart</h1>
+          <button id="closeCart">
+            <img src="assets/images/Icons/Close.svg" alt="Close" class="x" />
+          </button>
+        </div>
+        <div class="line"></div>
+        <div class="pop-up-body mt-4 mb-2">
+          <div class="list">
+            <div class="cart-item mb-4 pb-3">
+              <figure>
+                <img
+                  src="assets/images/Spring Summer/Tasha & Josh.svg"
+                  alt="Tasha & Josh"
+                />
+              </figure>
+              <div class="cart-detail ml-3 mr-auto">
+                <h2 class="mb-2">New Order Cassette</h2>
+                <p>Rp 600,000</p>
+              </div>
+              <button>
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <div class="cart-item mb-4 pb-3">
+              <figure>
+                <img
+                  src="assets/images/Spring Summer/English Children Book.svg"
+                  alt="English Children Book"
+                />
+              </figure>
+              <div class="cart-detail ml-3 mr-auto">
+                <h2 class="mb-2">New Order Cassette</h2>
+                <p>Rp 600,000</p>
+              </div>
+              <button>
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <div class="cart-item mb-3 pb-3">
+              <figure>
+                <img
+                  src="assets/images/Spring Summer/New Order Cassette.svg"
+                  alt="New Order Cassette"
+                />
+              </figure>
+              <div class="cart-detail ml-3 mr-auto">
+                <h2 class="mb-2">New Order Cassette</h2>
+                <p>Rp 600,000</p>
+              </div>
+              <button>
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+          </div>
+          <div class="subtotal d-flex justify-content-between mb-2">
+            <p class="pop-up-text">SUBTOTAL</p>
+            <p class="pop-up-text">Rp 1,000,000</p>
+          </div>
+          <button class="button-primary w-100 mb-2">View Chart</button>
+          <button class="button-primary w-100 mb-2">Checkout</button>
+          <p class="promo">Free Shipping on All Orders Over Rp 200,000!</p>
+        </div>
+      </div>
+    </div>
+    <header>
+      <nav
+        class="
+          navbar navbar-expand-xl navbar-transparent
+          fixed-top
+          px-2 px-md-3 px-lg-5
+          py-4
+        "
+      >
+        <div
+          class="
+            container-fluid
+            d-flex
+            justify-content-between
+            align-items-center
+          "
+        >
+          <button id="menuButton" class="mt-3 p-1 pb-2">
+            <figure>
+              <img
+                src="assets/images/Icons/Menu.svg"
+                alt="Menu"
+                class="icons"
+              />
+            </figure>
+          </button>
+          <a class="navbar-brand" href="#">
+            <figure class="ml-5 mr-4">
+              <img src="assets/images/Logo.svg" alt="Bakoel Asa" />
+            </figure>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-lg fas fa-sort-down"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mt-3">
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">shop</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">new arrivals</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">collaboration</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">about</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">price</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav navbar-right ml-auto mt-3">
+              <li class="nav-item mx-2">
+                <a href="" class="nav-link">
+                  <figure>
+                    <img
+                      src="assets/images/Icons/Search.svg"
+                      alt="Search"
+                      class="icons"
+                    />
+                  </figure>
+                </a>
+              </li>
+              <li class="nav-item mx-2">
+                <a href="" class="nav-link">
+                  <figure>
+                    <img
+                      src="assets/images/Icons/Account.svg"
+                      alt="Account"
+                      class="icons"
+                    />
+                  </figure>
+                </a>
+              </li>
+              <li class="nav-item mx-2">
+                <a href="" class="nav-link">
+                  <figure>
+                    <img
+                      src="assets/images/Icons/Favorite.svg"
+                      alt="Favorite"
+                      class="icons"
+                    />
+                  </figure>
+                </a>
+              </li>
+              <li class="nav-item ml-2">
+                <a role="button" id="cartOpen" class="nav-link">
+                  <figure>
+                    <img
+                      src="assets/images/Icons/Cart.svg"
+                      alt="Cart"
+                      class="icons"
+                    />
+                  </figure>
+                </a>
+                <span class="counter">3</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="banner px-2 px-md-3 px-lg-5">
+        <div class="container">
+          <div id="carousel">
+            <div class="d-md-flex flex-md-row align-items-md-center">
+              <div class="col-12 col-md-6">
+                <h1 class="banner-title text-center">
+                  <strong
+                    >Hot collection <br />
+                    hot Sale.</strong
+                  >
+                </h1>
+                <p class="my-4">Brand made with love</p>
+                <button class="button-primary">Start Shopping</button>
+              </div>
+              <div class="col-12 col-md-6 d-none d-md-block">
+                <figure>
+                  <img
+                    src="assets/images/Hero.svg"
+                    alt="Hero"
+                    class="hero-img mx-auto"
+                  />
+                </figure>
+              </div>
+            </div>
+            <div class="d-md-flex flex-md-row align-items-md-center">
+              <div class="col-12 col-md-6">
+                <h1 class="banner-title text-center">
+                  <strong
+                    >Hot collection <br />
+                    hot Sale.</strong
+                  >
+                </h1>
+                <p class="my-4">Brand made with love</p>
+                <button class="button-primary">Start Shopping</button>
+              </div>
+              <div class="col-12 col-md-6 d-none d-md-block">
+                <figure>
+                  <img
+                    src="assets/images/Hero.svg"
+                    alt="Hero"
+                    class="hero-img mx-auto"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="springSummer" class="px-2 px-md-3 px-lg-5 pt-5">
+        <div class="container-fluid">
+          <h1 class="text-center mb-2">Spring summer 2018</h1>
+          <h2 class="text-center mb-5">Find your style. Fall fashion 2020</h2>
+          <div class="custom-grid">
+            <div class="fashion-item">
+              <h3 class="text-center mb-4">#woman #fashion</h3>
+              <figure class="text-center">
+                <img
+                  src="assets/images/Spring Summer/Woman Fashion.svg"
+                  alt="Woman Fashion"
+                  class="img-fluid rounded"
+                />
+              </figure>
+            </div>
+            <div class="list-item">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-xl-4 mb-5">
+                  <div class="card border-0">
+                    <figure class="position-relative">
+                      <img
+                        src="assets/images/Spring Summer/Tasha & Josh.svg"
+                        alt="Tasha & Josh"
+                        class="card-img-top img-fluid"
+                      />
+                      <figcaption
+                        class="d-flex justify-content-around align-items-center"
+                      >
+                        <a href="">
+                          <i class="fa-2x fas fa-cart-plus"></i>
+                        </a>
+                        <a href="">
+                          <i class="fa-2x fas fa-heart"></i>
+                        </a>
+                      </figcaption>
+                    </figure>
+                    <div class="card-body">
+                      <h5 class="card-title mb-2">Tasha & Josh</h5>
+                      <p class="card-text">$60.00</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-4 mb-5">
+                  <div class="card border-0">
+                    <figure class="position-relative">
+                      <img
+                        src="assets/images/Spring Summer/English Children Book.svg"
+                        alt="English Children Book"
+                        class="card-img-top img-fluid"
+                      />
+                      <figcaption
+                        class="d-flex justify-content-around align-items-center"
+                      >
+                        <a href="">
+                          <i class="fa-2x fas fa-cart-plus"></i>
+                        </a>
+                        <a href="">
+                          <i class="fa-2x fas fa-heart"></i>
+                        </a>
+                      </figcaption>
+                    </figure>
+                    <div class="card-body">
+                      <h5 class="card-title mb-2">English Children Book</h5>
+                      <p class="card-text">$60.00</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-4 mb-5">
+                  <div class="card border-0">
+                    <figure class="position-relative">
+                      <img
+                        src="assets/images/Spring Summer/New Order Cassette.svg"
+                        alt="New Order Cassette"
+                        class="card-img-top img-fluid"
+                      />
+                      <figcaption
+                        class="d-flex justify-content-around align-items-center"
+                      >
+                        <a href="">
+                          <i class="fa-2x fas fa-cart-plus"></i>
+                        </a>
+                        <a href="">
+                          <i class="fa-2x fas fa-heart"></i>
+                        </a>
+                      </figcaption>
+                    </figure>
+                    <div class="card-body">
+                      <h5 class="card-title mb-2">New Order Cassette</h5>
+                      <p class="card-text">Rp 600.000</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-4 mb-5">
+                  <div class="card border-0">
+                    <figure class="position-relative">
+                      <img
+                        src="assets/images/Spring Summer/Pharmacy Vintage Poster.svg"
+                        alt="Pharmacy Vintage Poster"
+                        class="card-img-top img-fluid"
+                      />
+                      <figcaption
+                        class="d-flex justify-content-around align-items-center"
+                      >
+                        <a href="">
+                          <i class="fa-2x fas fa-cart-plus"></i>
+                        </a>
+                        <a href="">
+                          <i class="fa-2x fas fa-heart"></i>
+                        </a>
+                      </figcaption>
+                    </figure>
+                    <div class="card-body">
+                      <h5 class="card-title mb-2">Pharmacy Vintage Poster</h5>
+                      <p class="card-text">$60.00</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-4 mb-5">
+                  <div class="card border-0">
+                    <figure class="position-relative">
+                      <img
+                        src="assets/images/Spring Summer/Mandoline.svg"
+                        alt="Mandoline"
+                        class="card-img-top img-fluid"
+                      />
+                      <figcaption
+                        class="d-flex justify-content-around align-items-center"
+                      >
+                        <a href="">
+                          <i class="fa-2x fas fa-cart-plus"></i>
+                        </a>
+                        <a href="">
+                          <i class="fa-2x fas fa-heart"></i>
+                        </a>
+                      </figcaption>
+                    </figure>
+                    <div class="card-body">
+                      <h5 class="card-title mb-2">Mandoline</h5>
+                      <p class="card-text">$60.00</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-4 mb-5">
+                  <div class="card border-0">
+                    <figure class="position-relative">
+                      <img
+                        src="assets/images/Spring Summer/Roland TR-808.svg"
+                        alt="Roland TR-808"
+                        class="card-img-top img-fluid"
+                      />
+                      <figcaption
+                        class="d-flex justify-content-around align-items-center"
+                      >
+                        <a href="">
+                          <i class="fa-2x fas fa-cart-plus"></i>
+                        </a>
+                        <a href="">
+                          <i class="fa-2x fas fa-heart"></i>
+                        </a>
+                      </figcaption>
+                    </figure>
+                    <div class="card-body">
+                      <h5 class="card-title mb-2">Roland TR-808</h5>
+                      <p class="card-text">$600.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="px-5 mt-3">
+          <div class="line"></div>
+        </div>
+
+        <div id="offering" class="py-5">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 col-sm-10 col-md-6 mx-auto pr-md-4 mb-5">
+                <div class="discount p-4">
+                  <div class="d-flex flex-row">
+                    <div class="col-4 p-0">
+                      <figure>
+                        <img
+                          src="assets/images/Discount-Hero.svg"
+                          alt="Discount"
+                          class="img-fluid mt-5"
+                        />
+                      </figure>
+                    </div>
+                    <div class="col-8 p-0">
+                      <h1>
+                        10% OFF YOUR <br />
+                        NEXT PURCHASE
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-10 col-md-6 mx-auto pl-md-4">
+                <div class="free-ship p-5">
+                  <div class="d-flex flex-row">
+                    <div class="col-8 p-0">
+                      <h1 class="mb-3">FREE SHIPPING</h1>
+                      <p>Free shipping on domestic orders</p>
+                    </div>
+                    <div class="col-4 p-0">
+                      <figure>
+                        <img
+                          src="assets/images/Free-Hero.svg"
+                          alt="Free Shipping"
+                          class="img-fluid mt-4"
+                        />
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bags-offer">
+            <div class="col-12 col-md-11">
+              <div class="row">
+                <div class="col-5 col-md-4 offset-md-1">
+                  <div class="detail-offer">
+                    <div class="d-flex justify-content-between">
+                      <span>#lookbook</span>
+                      <span>#bags</span>
+                      <span>#sale</span>
+                    </div>
+                    <p class="mt-4">
+                      Up To 40% Off Final Sale Items. Caught in the moment!
+                    </p>
+                    <a href="" class="read-more">Read More</a>
+                  </div>
+                </div>
+                <div class="col-7 col-md-6">
+                  <figure>
+                    <img src="assets/images/Bags.svg" alt="Bags" />
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mx-auto mt-5">
+            <button class="button-primary px-4 border-0">Shop now</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="items" class="px-2 px-md-3 px-lg-5 pt-5">
+        <div class="container-fluid">
+          <ul class="filter p-0 mb-5">
+            <li class="active d-inline-block">
+              <a href="">All</a>
+            </li>
+            <li class="d-inline-block">
+              <a href="">New</a>
+            </li>
+            <li class="d-inline-block">
+              <a href="">Popular</a>
+            </li>
+            <li class="d-inline-block">
+              <a href="">Sale</a>
+            </li>
+          </ul>
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card border-0 mb-4">
+                <figure class="position-relative">
+                  <img
+                    src="assets/images/Items/Kaos Band Dandelions.svg"
+                    alt="Kaos Band Dandelions"
+                    class="card-img-top img-fluid"
+                  />
+                  <figcaption
+                    class="
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                      px-3
+                      py-2
+                    "
+                  >
+                    <h5>New Arrivals</h5>
+                    <img src="assets/images/Icons/Arrow-Diagonals.svg" alt="" />
+                  </figcaption>
+                </figure>
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Kaos Band Dandelions</h5>
+                  <p class="card-text">Rp 180,000</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card border-0 mb-4">
+                <figure class="position-relative">
+                  <img
+                    src="assets/images/Items/Sepatu Ellese.svg"
+                    alt="Sepatu Ellese"
+                    class="card-img-top img-fluid"
+                  />
+                  <figcaption
+                    class="
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                      px-3
+                      py-2
+                    "
+                  >
+                    <h5>New Arrivals</h5>
+                    <img src="assets/images/Icons/Arrow-Diagonals.svg" alt="" />
+                  </figcaption>
+                </figure>
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Sepatu Ellese</h5>
+                  <p class="card-text">Rp 1,200,000</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card border-0 mb-4">
+                <figure class="position-relative">
+                  <img
+                    src="assets/images/Items/Bunga Kertas Hias.svg"
+                    alt="Bunga Kertas Hias"
+                    class="card-img-top img-fluid"
+                  />
+                  <figcaption
+                    class="
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                      px-3
+                      py-2
+                    "
+                  >
+                    <h5>New Arrivals</h5>
+                    <img src="assets/images/Icons/Arrow-Diagonals.svg" alt="" />
+                  </figcaption>
+                </figure>
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Bunga Kertas Hias</h5>
+                  <p class="card-text">Rp 75,000</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card border-0 mb-4">
+                <figure class="position-relative">
+                  <img
+                    src="assets/images/Items/Pot Terakota.svg"
+                    alt="Pot Terakota"
+                    class="card-img-top img-fluid"
+                  />
+                  <figcaption
+                    class="
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                      px-3
+                      py-2
+                    "
+                  >
+                    <h5>New Arrivals</h5>
+                    <img src="assets/images/Icons/Arrow-Diagonals.svg" alt="" />
+                  </figcaption>
+                </figure>
+                <div class="card-body">
+                  <h5 class="card-title mb-2">
+                    Pot Terakota / Gerabah / Tanah Liat
+                  </h5>
+                  <p class="card-text">Rp 10,000</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card border-0 mb-4">
+                <figure class="position-relative">
+                  <img
+                    src="assets/images/Items/Botol Obat.svg"
+                    alt="Botol Obat"
+                    class="card-img-top img-fluid"
+                  />
+                  <figcaption
+                    class="
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                      px-3
+                      py-2
+                    "
+                  >
+                    <h5>New Arrivals</h5>
+                    <img src="assets/images/Icons/Arrow-Diagonals.svg" alt="" />
+                  </figcaption>
+                </figure>
+                <div class="card-body">
+                  <h5 class="card-title mb-2">
+                    Botol Obat terbuat dari bahan kaca
+                  </h5>
+                  <p class="card-text">Rp 3,000</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card border-0 mb-4">
+                <figure class="position-relative">
+                  <img
+                    src="assets/images/Items/Kaset Band Bekas.svg"
+                    alt="Kaset Band New Order Bekas"
+                    class="card-img-top img-fluid"
+                  />
+                  <figcaption
+                    class="
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                      px-3
+                      py-2
+                    "
+                  >
+                    <h5>New Arrivals</h5>
+                    <img src="assets/images/Icons/Arrow-Diagonals.svg" alt="" />
+                  </figcaption>
+                </figure>
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Kaset Band New Order Bekas</h5>
+                  <p class="card-text">Rp 150,000</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card border-0 mb-4">
+                <figure class="position-relative">
+                  <img
+                    src="assets/images/Items/Buku Anak-Anak.svg"
+                    alt="Buku Anak-Anak"
+                    class="card-img-top img-fluid"
+                  />
+                  <figcaption
+                    class="
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                      px-3
+                      py-2
+                    "
+                  >
+                    <h5>New Arrivals</h5>
+                    <img src="assets/images/Icons/Arrow-Diagonals.svg" alt="" />
+                  </figcaption>
+                </figure>
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Buku Anak-anak Strange Plants</h5>
+                  <p class="card-text">Rp 250,000</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card border-0 mb-4">
+                <figure class="position-relative">
+                  <img
+                    src="assets/images/Items/Jaket Peter Blake.svg"
+                    alt="Jaket Peter Blake"
+                    class="card-img-top img-fluid"
+                  />
+                  <figcaption
+                    class="
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                      px-3
+                      py-2
+                    "
+                  >
+                    <h5>New Arrivals</h5>
+                    <img src="assets/images/Icons/Arrow-Diagonals.svg" alt="" />
+                  </figcaption>
+                </figure>
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Jaket Peter Blake</h5>
+                  <p class="card-text">Rp 1,250,000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="px-2 px-md-3 px-lg-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-5 col-lg-3">
+            <figure class="mb-4">
+              <img src="assets/images/Logo Black.svg" alt="Bakoel Asa" />
+            </figure>
+          </div>
+          <div class="col-12 col-sm-6 col-md-7 col-lg-9">
+            <div class="row">
+              <div class="col-12 col-sm-8 mx-auto col-md-6 col-lg-3 mb-4">
+                <h1 class="footer-title mb-2">How We Help</h1>
+                <a href="">Retailers</a>
+                <a href="">Interiors Desainers</a>
+                <a href="">Products Desainers</a>
+                <a href="">Wholeshares / Importers</a>
+                <a href="">Artisans</a>
+              </div>
+              <div class="col-12 col-sm-8 mx-auto col-md-6 col-lg-3 mb-4">
+                <h1 class="footer-title mb-2">Get to Know Us</h1>
+                <a href="">About</a>
+                <a href="">Polices</a>
+                <a href="">Careera</a>
+                <a href="">Press</a>
+              </div>
+              <div class="col-12 col-sm-8 mx-auto col-md-6 col-lg-3 mb-4">
+                <h1 class="footer-title mb-2">Join the Community</h1>
+                <a href="">Upcoming Events</a>
+                <a href="">Become a Buyer</a>
+                <a href="">Bexome a Seller</a>
+              </div>
+              <div class="col-12 col-sm-8 mx-auto col-md-6 col-lg-3 mb-4">
+                <h1 class="footer-title mb-2">Follow us</h1>
+                <div class="social-media mb-3">
+                  <div class="d-flex flex-row align-items-center">
+                    <i class="fab fa-facebook-f p-1 mr-2"></i>
+                    <a href=""> Facebook</a>
+                  </div>
+                  <div class="d-flex flex-row align-items-center">
+                    <i class="fab fa-twitter p-1 mr-2"></i>
+                    <a href=""> Twitter </a>
+                  </div>
+                  <div class="d-flex flex-row align-items-center">
+                    <i class="fab fa-instagram p-1 mr-2"></i>
+                    <a href=""> Instagram </a>
+                  </div>
+                </div>
+                <p>&copy; 2019 bakoelasa.<br />All Rights Reserved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="assets/js/themes.js"></script>
+  </body>
+</html>
